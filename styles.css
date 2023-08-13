@@ -1,0 +1,57 @@
+body {
+    background-color: cornflowerblue;
+}
+
+.gameContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.gridContainer {
+    border: 10px rgb(0, 0, 0) solid;
+    border-radius: 5px;
+    max-width: 1000px;
+    max-height: 1000px;
+    min-height: 1000px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.square {
+    background-color: rgb(250, 162, 162);
+    margin: 0px;
+}
+
+.square2 {
+    background-color: rgb(238, 119, 76);
+    margin: 0px;
+}
+
+.menuContainer {
+    border: 10px black solid;
+    border-radius: 5px;
+    width: 20%;
+    height: 500px;
+    background-color: crimson;
+}
+
+.squareCheck {
+    border: none;
+    margin-left: 5%;
+    width: 20%;
+}
+
+.squareCheck:focus {
+    outline: 2px black solid;
+
+}
+
+p {
+    margin-left: 5%;
+    margin-bottom: 2px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
