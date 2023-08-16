@@ -17,11 +17,13 @@ function createGrid(squares) {
     let gridSize = squares * squares;
     const maxSize = 900;   //Fixed max PIXEL size for grid
     let boxSize = (maxSize / squares);  //Calculation to determine size of each box to fit in grid
+    log(boxSize);
     for (let i = 1; i <= gridSize; i++) {
         const square = document.createElement('div');
         square.classList.toggle('square');
         square.id = 'square';
         square.setAttribute('style', `height: ${boxSize}px; width: ${boxSize}px;`);
+        square.setAttribute('style', `flex-basis: calc(100% / ${squares});`)
         gridContainer.appendChild(square);
         square.addEventListener('mouseenter', function (e) {
             changeColour(e.target);
