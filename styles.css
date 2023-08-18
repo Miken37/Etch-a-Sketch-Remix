@@ -21,14 +21,10 @@ body {
 }
 
 .square {
-    background-color: rgb(252, 252, 252);
     margin: 0px;
+    background-color: white;
 }
 
-.square2 {
-    background-color: rgb(73, 73, 73);
-    margin: 0px;
-}
 
 .menuContainer {
     border: 10px black solid;
@@ -38,9 +34,12 @@ body {
     background-color: crimson;
 }
 
+.menuContainer>* {
+    margin-left: 5%;
+}
+
 .squareCheck {
     border: none;
-    margin-left: 5%;
     width: 20%;
 }
 
@@ -50,13 +49,8 @@ body {
 }
 
 p {
-    margin-left: 5%;
     margin-bottom: 2px;
     color: white;
     font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.rainbow {
-    margin-left: 5%;
 }
